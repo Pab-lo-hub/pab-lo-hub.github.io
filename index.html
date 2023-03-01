@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -16,9 +15,114 @@
 
 <body>
   <div id="app">
-    <h1 class="flex items-center justify-center mt-5 text-lg font-bold">Mi Curriculum Vitae webpage</h1>
+    <h1 class="flex items-center justify-center mt-5 text-lg font-bold text-white" style="background-color: #0a4275">Mi Curriculum Vitae</h1>
     <div class="flex items-center justify-center mt-5">
-      <div class="flex justify-center items-center flex-wrap space-x-2">
+    </div>
+    <div class="flex items-center justify-center mt-5">
+      <div class="w-7/12 p-10 h-auto">
+        <h1 class="text-gray-500">
+          Espacio para escribir información del CV
+          "Estoy buscando mi primera experiencia profesional en programación..."
+        </h1>
+        <hr class="my-5" />
+        <h1 class="text-gray-400 text-sm uppercase font-semibold tracking-wider">
+          Diseñador - Desarrollador
+        </h1>
+        <h1 class="font-semibold uppercase tracking-wider my-6 text-gray-500">
+          Experiencia
+        </h1>
+        <h1 class="text-gray-600 font-semibold">
+          FullStack Developer (2018 - Presente)
+        </h1>
+        <ul class="list-disc ml-5 text-gray-500">
+          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+        </ul>
+        <h2 class="text-gray-600 font-semibold mt-3">
+          Developer (2016 - 2-18)
+        </h2>
+        <ul class="list-disc ml-5 text-gray-500">
+          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+        </ul>
+        <h3 class="text-gray-600 font-semibold mt-3">
+          Sr Developer (2016 - 2-18)
+        </h3>
+        <ul class="list-disc ml-5 text-gray-500">
+          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+        </ul>
+        
+        <h1 class="font-semibold uppercase tracking-wider my-6 text-gray-500">
+          Educación
+        </h1>
+        <h1 class="text-gray-600 font-semibold">
+          UTN (2018 - Presente)
+        </h1>
+        <ul class="list-disc ml-5 text-gray-500">
+          <li>Desarrollo de software</li>
+          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+        </ul>
+        <h2 class="text-gray-600 font-semibold mt-3">
+          Argentina Programa 4.0 (2016 - 2-18)
+        </h2>
+        <ul class="list-disc ml-5 text-gray-500">
+          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+        </ul>
+        <h3 class="text-gray-600 font-semibold mt-3">
+          Free Code Camp(2016 - 2-18)
+        </h3>
+        <ul class="list-disc ml-5 text-gray-500">
+          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+        </ul>
+      </div>
+
+      <div class="w-1/8 p-10 h-auto" style="background-color: #0a4275">
+        <div class="flex items-center justify-center mb-10">
+          <img v-bind:src="image" alt="Imagen de perfil" class="rounded-full w-32 border-2 border-gray-300" />
+        </div>
+        <h1 class="text-gray-400 uppercase tracking-widest text-lg font-bold">
+          Datos
+        </h1>
+        <h1 class="text-gray-400 text-sm">{{ name }}</h1>
+        <h1 class="text-gray-400 text-sm">{{ email }}</h1>
+        <h1 class="text-gray-400 text-sm">{{ cell }}</h1>
+        <h1 class="text-gray-400 text-sm">{{ location }}</h1>
+
+        <h1 class="text-gray-500 text-sm">
+          <span class="italic">Educación Pública</span>,
+          <span class="text-gray-400 font-semibold italic">CABA</span> /
+          2007-2022
+        </h1>
+        <hr class="my-5" />
+        <h1 class="text-gray-400 mt-2 uppercase tracking-widest text-lg font-bold">
+          SKILLS
+        </h1>
+        <ul>
+          <li class="text-gray-500 text-sm list-disc ml-4">
+            HTML
+          </li>
+          <li class="text-gray-500 text-sm list-disc ml-4">
+            CSS
+          </li>
+          <li class="text-gray-500 text-sm list-disc ml-4">
+            Javascript
+          </li>
+          <li class="text-gray-500 text-sm list-disc ml-4 mb-1">
+            Node
+          </li>
+        </ul>
+        <hr class="my-5" />
+        <h1 class="text-gray-400 text-sm uppercase font-semibold tracking-wider">
+          <img src="images/skill bar ahile ji.jpg">
+        </h1>
+      </div>
+    </div>
+    <footer style="background-color: #0a4275" class="pt-6">
+      <div class="flex justify-center flex-wrap space-x-2 p-4 b-3">
         <!-- Github -->
         <button onclick="window.location.href='https://github.com/';" type="button" data-mdb-ripple="true" data-mdb-ripple-color="light"
           class="inline-block px-6 py-2.5 mb-2 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out"
@@ -74,102 +178,7 @@
           </svg>
         </button>
       </div>
-
-    </div>
-    <div class="flex items-center justify-center mt-5">
-      <div class="bg-blue-900 w-1/8 p-10 h-auto">
-        <div class="flex items-center justify-center mb-10">
-          <img v-bind:src="image" alt="Imagen de perfil" class="rounded-full w-32 border-2 border-gray-300" />
-        </div>
-        <h1 class="text-gray-400 uppercase tracking-widest text-lg font-bold">
-          Datos
-        </h1>
-        <h1 class="text-gray-400 text-sm">{{ name }}</h1>
-        <h1 class="text-gray-400 text-sm">{{ email }}</h1>
-        <h1 class="text-gray-400 text-sm">{{ cell }}</h1>
-        <h1 class="text-gray-400 text-sm">{{ location }}</h1>
-        <hr class="my-5" />
-        <h1 class="text-gray-400 mt-2 uppercase tracking-widest text-lg font-bold"></h1>
-        <h1 class="text-gray-400 text-sm uppercase font-semibold tracking-wider">
-          Diseñador - Desarrollador
-        </h1>
-        <h1 class="text-gray-500 text-sm">
-          <span class="italic">Educación Pública</span>,
-          <span class="text-gray-400 font-semibold italic">CABA</span> /
-          2007-2022
-        </h1>
-        <hr class="my-5" />
-        <h1 class="text-gray-400 mt-2 uppercase tracking-widest text-lg font-bold">
-          SKILLS
-        </h1>
-        <ul>
-          <li class="text-gray-500 text-sm list-disc ml-4">
-            Adobe Photoshop
-          </li>
-          <li class="text-gray-500 text-sm list-disc ml-4">
-            Adobe Illustrator
-          </li>
-          <li class="text-gray-500 text-sm list-disc ml-4">
-            Adobe After Effects
-          </li>
-          <li class="text-gray-500 text-sm list-disc ml-4">
-            Microsoft Power Point
-          </li>
-          <li class="text-gray-500 text-sm list-disc ml-4">Microsoft Word</li>
-          <li class="text-gray-500 text-sm list-disc ml-4 mb-1">
-            Adobe InDesign
-          </li>
-        </ul>
-      </div>
-
-      <div class="bg-white w-7/12 p-10 h-auto">
-        <h1 class="text-gray-500">
-          Los datos del usuario los trae de una call a la API de RandomUser.Me. El resto son hardcodeados.
-        </h1>
-        <h1 class="font-semibold uppercase tracking-wider my-6 text-gray-500">
-          Experience
-        </h1>
-        <h1 class="text-gray-600 font-semibold">
-          FullStack Developer (2018 - Present)
-        </h1>
-        <ul class="list-disc ml-5 text-gray-500">
-          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-        </ul>
-        <h1 class="text-gray-600 font-semibold mt-3">
-          Sr Developer (2016 - 2-18)
-        </h1>
-        <ul class="list-disc ml-5 text-gray-500">
-          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-        </ul>
-        <h1 class="text-gray-600 font-semibold mt-3">
-          Sr Developer (2016 - 2-18)
-        </h1>
-        <ul class="list-disc ml-5 text-gray-500">
-          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-        </ul>
-        <h1 class="text-gray-600 font-semibold mt-3">
-          Sr Developer (2016 - 2-18)
-        </h1>
-        <ul class="list-disc ml-5 text-gray-500">
-          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-        </ul>
-        <h1 class="text-gray-600 font-semibold mt-3">
-          Sr Developer (2016 - 2-18)
-        </h1>
-        <ul class="list-disc ml-5 text-gray-500">
-          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-        </ul>
-      </div>
-    </div>
+    </footer>
   </div>
 
   <script src="/node_modules/tw-elements/dist/js/index.min.js"></script>

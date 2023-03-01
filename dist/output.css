@@ -55,6 +55,7 @@ body {
   margin: 0;
   /* 1 */
   line-height: inherit;
+  background-color: rgba(216, 215, 215, 0.644);
   /* 2 */
 }
 
